@@ -3,11 +3,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
+
         Scanner sc = new Scanner(System.in);
         int number = 1;
         String collection = sc.next();
         sc.nextLine();        //next의 개행문자 읽기
         String recipeName = sc.nextLine();
+
 
         //List 사용 시
         if(collection.equals("List")){
@@ -27,6 +29,7 @@ public class Main {
                 number++;
             }
         }
+
         //Set 사용 시
         else if(collection.equals("Set")){
             Set<String> sets = new HashSet<>();
@@ -45,5 +48,6 @@ public class Main {
                 number++;
             }
         }
+
     }
 }
